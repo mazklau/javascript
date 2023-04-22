@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terceira passo javascript</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url(../../Estudos/exer23/imagens/wallpaper001.jpg);
+            background-color:black;
+            color: rgb(36, 33, 33);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 200px;
+            font-style: normal;
+            text-align: center;
+        }
+    
+        h1{
+            
+            font-size: 3em ;
+        }
+        input{
+            border-radius: 2px solid black ;
+            font-size: 1.4em;
+            text-align: center;
+            
+        }
+        div#res{
+            font-size: 2.5em;
+           
+        }
+    </style>
+</head>
+<body> 
+<header>
+    
+      <h1>Somando Valores</h1>
+      <input type="number" name="txtn1" id="txtn1">
+      <input type="number" name="txtn2" id="txtn2">
+      <input type="button" value="somar" onclick="somar()">
+      <div id ="res">Resultado</div>
+        <script>
+            function somar (){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+    
+            }
+        </script>
+</header>
+</body>
+</html>
